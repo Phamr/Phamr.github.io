@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Randy</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Carrois+Gothic+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <style>
+        
+        body {
+            margin: 0px;
+            font-family: 'Open Sans', sans-serif;
+            letter-spacing: 2px;
+        }
+        nav {
+            background-color: white;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 4;
+        }
+        
+        .nav1container {
+            width: 100%;
+            background-color: black;
+        }
+        
+        .nav2container {
+            width: 100%;
+            background-color: white;
+        }
+
+    
+        .navbar {
+            display: flex;
+            top: 0%;
+            flex-direction: column;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
+        }
+        
+        .nav1 {
+            display: flex;
+            width: 100%;
+            background-color: black;
+            height: 27px;
+        }
+        
+        .nav1item {
+            max-width: 480px;
+            width: 100%;
+            font-size: 9px;
+            text-align: center;
+            color: white;
+            vertical-align: middle;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 5px;
+        }
+        
+        .nav1right {
+            max-width: 480px;
+            width: 100%;
+            text-align: right;
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-end;
+            font-size: 9px;
+            vertical-align: middle;
+            font-family: 'Open Sans', sans-serif;
+            margin-top: 5px;
+        }
+        
+        .nav1box {
+            margin-left: 24px;
+            margin-right: 5px;
+            color: white;
+            vertical-align: text-top;
+        }
+        
+        .nav2 {
+            display: flex;
+            width: 100%;
+            background-color: white;
+            height: 72px;
+        }
+        
+        .nav2item {
+            max-width: 480px;
+            width: 100%;
+            font-size: 12px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .nav2box {
+            font-weight: 600;
+            padding: 26px;
+        }
+        
+        .video {
+        }
+        
+        #video {
+            width: 100%;
+            height: auto;
+            margin-top: 100px;
+            z-index: 2;
+            margin-bottom: 15px;
+        }
+        .videotext {
+            text-align:center;
+            color: white;
+            z-index: 3;
+            position: absolute;
+            width: 100%;
+            top: 250px;
+            font-size: 14px;
+            letter-spacing: 3px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        
+        .cardcontainer {
+            display: flex;
+            justify-content: space-around;
+
+        }
+        
+        .card {
+            max-width: 438px;
+            max-height: 530px;
+            width: 438px;
+            height: 530px;
+            z-index: 2;
+            overflow: hidden;
+        }
+        
+        .card img:hover {
+            -ms-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            
+            -ms-transition: all 1s ease-in-out;
+            -webkit-transition: all 1s ease-in-out;
+            -moz-transition: all 1s ease-in-out;
+            -o-transition: all 1s ease-in-out;
+            
+        }
+        
+        .button {
+            text-align: center;
+            z-index: 3;
+            position: relative;
+            bottom: 55px;
+            background-color: #0070bc;
+            height: 40px;
+            padding-top: 15px;
+            opacity: .9;
+            color: white;
+            text-transform: uppercase;
+        }
+        
+        .button:hover {
+            background-color: #0267ab;
+        }
+        
+        .quadlock {
+             width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
+            display: flex;
+            margin-top: 50px;
+        }
+        
+        .text {
+             max-width: 480px;
+            width: 100%;
+            font-size: 18px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+        
+        .reviewed {
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
+            margin-top: 100px;
+        }
+        
+        .reviews {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 50px;
+            margin-bottom: 125px;
+        }
+        
+        .reviews img{
+            max-width: 120px;
+        }
+        
+        footer {
+            padding-top: 115px;
+            padding-bottom: 50px;
+            border-top: 1px solid #d9d9d9;
+        }
+        
+        .footer {
+            display: flex;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 1440px;
+        }
+        
+        .footerbox {
+            max-width: 240px;
+            width: 100%;
+            max-height: 219px;
+            height: 100%;
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        ul li{
+            margin: 8px 0;
+            font-size: 14px;
+            color: darkgrey;
+        }
+        
+        ul li:hover {
+            color: #007bff;
+        }
+        
+        .follow {
+            display: flex;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .footer2 {
+            margin-top: 80px;
+            padding-top: 40px;
+            border-top: 1px solid #d9d9d9;
+            max-width: 1440px;
+            width: 100%;
+            padding-left: 15px;
+            padding-right: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+        }
+        
+
+        
+        .copyright {
+            max-width: 930px;
+            width: 930px;
+            max-height: 21px;
+            padding-right: 15px;
+            padding-left: 15px;
+            font-size: 14px;
+            letter-spacing: 0px;
+            color: darkgrey;
+        }
+        
+        .pay {
+            text-align: right;
+            max-width: 33.333333%;
+            align-self: flex-end;
+        }
+        
+        .pay img {
+            margin: 4px;
+            max-width: 8.88%;
+        }
+        
+
+        
+    
+    
+    </style>
+</head>
+
+<body>
+    
+    <nav>
+        <div class="nav1container">
+    <div class="navbar">
+    
+        <div class="nav1">
+            <div class="nav1item"></div>
+            <div class="nav1item" style="font-size: 9px; align-items: center;">FREE SHIPPING ON US ORDERS OVER $35</div>
+            <div class="nav1right">
+                <div class="nav1box">SUPPORT</div>
+                <div class="nav1box"><img src="../Images/USA.png">USA</div>
+                <div class="nav1box">LOGIN</div>
+            </div> 
+        </div>
+        </div>
+    </div>
+        
+        
+       <div class="nav2container">
+        <div class="navbar">
+        <div class="nav2">
+            <div class="nav2item"><img src="../Images/QL.png" style="margin-top: 10px;"></div>
+            <div class="nav2item" style="display: flex; justify-content: space-between; align-items: center;">
+                <div class="nav2box">ACTIVITY</div>
+                <div class="nav2box">DEVICE</div>
+                <div class="nav2box">MOUNTS</div>
+                <div class="nav2box">GET 10% OFF</div>
+            </div>
+            <div class="nav2item" style="justify-content: flex-end; display: flex; align-items: center;"><img src="../Images/cart.png" style="width: 29px; height: 23px;"></div>
+        </div>
+            </div>
+           </div>
+    </nav>
+    
+    <div class="video">
+    <video id="video" autoplay loop muted><source src="../Images/Quadlock.mp4" type="video/mp4"></video>
+        <div class="videotext"><h1>Smartphone Mounting For An Active Lifestyle™</h1></div>
+    </div>
+    
+    
+    <div class="cardcontainer"> 
+        <div class="card" style="margin-left: 40px;">
+        <img src="../Images/life.jpg" style="width: 438px; height: 530px;"> 
+        <div class="button">Shop Life</div>
+        </div>
+   
+        <div class="card">
+        <img src="../Images/ride.jpg" style="width: 438px; height: 530px;"> 
+        <div class="button">Shop Ride</div>
+        </div>
+     
+        <div class="card">
+        <img src="../Images/moto.jpg" style="width: 438px; height: 530px;"> 
+        <div class="button">Shop Moto</div>
+        </div>
+    
+        <div class="card" style="margin-right: 40px;">
+        <img src="../Images/drive.jpg" style="width: 438px; height: 530px;"> 
+        <div class="button">Shop Drive</div>
+        </div>
+   
+         </div>
+    
+    
+    <div class="quadlock">
+        <div class="text">TWIST, LOCK & GO™</div>
+        <div class="text" style="font-weight: 100; color: darkgrey; font-size: 14px;">Quad Lock® is the strongest and most secure mounting system in the world that integrates your smartphone into an active lifestyle. The unique approach of integrating the mounting interface into a slim and durable everyday case allows the Quad Lock® mounts to be much smaller than any other mount on the market.</div>
+        <div class="text">#QUADLOCK</div>
+    </div>
+
+    
+    <div class="reviewed">
+    <h5 style="text-transform: uppercase; font-size: 14px; text-align: center;">Reviewed By The Best</h5>
+        <div class="reviews">
+        <div><img src="../Images/wired.png"></div>
+        <div><img src="../Images/NYTimes.jpg"></div> 
+        <div><img src="../Images/NBC.jpg"></div>
+        <div><img src="../Images/Endgadget.jpg"></div>
+        <div><img src="../Images/verge.png"></div>
+        <div><img src="../Images/Forbes.jpg"></div>    
+        <div><img src="../Images/Mashable.jpg"></div>
+        <div><img src="../Images/Macworld.jpg"></div>
+        </div>
+    </div>
+    
+    
+    <footer>
+    
+        <div class="footer">
+            
+            <div class="footerbox"><img src="../Images/QL.png"></div>
+            
+            <div class="footerbox">
+                <h5 style="margin: 6px 0px 15px; text-transform: uppercase; font-weight: 800;">Shop By</h5>
+                <ul>
+                <li>Ride</li>
+                <li>Moto</li>    
+                <li>Drive</li>
+                <li>Run</li>
+                <li>Life</li>
+                <li>Parts & Accessories</li>
+                </ul>
+            </div>
+            
+            
+            
+            <div class="footerbox">
+                <h5 style="margin: 6px 0px 15px; text-transform: uppercase; font-weight: 800;">About</h5>
+                <ul>
+                <li>About Us</li>
+                <li>Blog</li>    
+                <li>Intellectual Property</li>
+                <li>World Bicycle Relief</li>
+                </ul>
+            </div>
+            
+            
+            <div class="footerbox">
+                <h5 style="margin: 6px 0px 15px; text-transform: uppercase; font-weight: 800;">Customers</h5>
+                <ul>
+                <li>Support</li>
+                <li>Contact Us</li>    
+                <li>Account Login</li>
+                <li>Privacy Policy</li>
+                <li>Warranty & Returns</li>
+                <li>Shipping</li>
+                </ul>
+            </div>
+            
+            
+            <div class="footerbox">
+                <h5 style="margin: 6px 0px 15px; text-transform: uppercase; font-weight: 800;">Follow</h5>
+                <ul>
+                <li class="follow"><div><img src="../Images/facebook.png" style="max-width: 18px; max-height: 18px; margin-right: 20px;"></div><div style="font-size: 10px;">281.24k</div>
+                    
+                <li class="follow"><div><img src="../Images/instagram.png" style="max-width: 18px; max-height: 18px; margin-right: 10px;"></div><div style="font-size: 10px;">272.12k</div>
+                
+                
+                <li class="follow"><div><img src="../Images/you-tube.png" style="max-width: 18px; max-height: 18px; margin-right: 10px;"></div><div style="font-size: 10px;">2.15k</div>
+                    
+                <li class="follow"><div><img src="../Images/twitter.png" style="max-width: 18px; max-height: 18px; margin-right: 10px;"></div><div style="font-size: 10px;">2.61k</div>
+                    
+                    </ul>
+            </div>
+            
+            
+            <div class="footerbox">
+            <img src="../Images/review.PNG" style="margin-top: -5px;">
+            </div>
+        
+        </div>
+        
+        
+        <div class="footer2">
+        
+        <div class="copyright">© Copyright 2014 - 2019 Annex Products PTY LTD | All Right Reserved</div>
+        <div class="pay">
+            <img src="../Images/pay.png">
+            <img src="../Images/visa.png">
+            <img src="../Images/master.png">
+            <img src="../Images/american.png">
+            <img src="../Images/paypal.png">
+            <img src="../Images/sezzle.png">
+            </div>
+            
+        </div>
+        
+        
+        
+        
+        
+    
+    </footer>
+    
+    
+
+    
+    
+    
+    
+    
+    
+</body>
+</html>
